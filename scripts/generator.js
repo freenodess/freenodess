@@ -7,29 +7,49 @@ import YAML from 'yaml';
 
 
 const SEARCH_QUERIES = [
-
-  "repo:Au1rxx/free-vpn-subscriptions",
- // "repo:barry-far/V2ray-Config",
-  //"repo:0xRadikal/Free-v2ray-Configs",
-  //"repo:zhuhaiuk/free-nodes",
-  //"repo:awesome-vpn/awesome-vpn",
-  
-
   "free v2ray config clash yaml subscription",
   "vless vmess hysteria2 trojan anytls free nodes",
   "clash_config.yaml free-nodes"
 ];
 
 
+// 优化后的抓取函数：结合“已知高频更新仓库的直链”与“API搜索”
 async function searchGitHubNodes() {
   let allNodeLinks = [];
   
+  // 1. 直接从几个高频自动更新的优质聚合仓库拉取原始文本（稳定、不会触发 API 422 错误）
+  const directUrls = [
+    'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml',
+    'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt',
+    'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/singbox.json'
+  ];
+
+  for (const url of directUrls) {
+    try {
+      console.log(`正在直接拉取订阅源: ${url}`);
+      const res = await fetch(url, { headers: { 'User-Agent': 'Node-Fetcher-Bot' } });
+      if (res.ok) {
+        const text = await res.text();
+        allNodeLinks.push(text);
+      }
+    } catch (e) {
+      console.warn(`直链拉取失败: ${url}`);
+    }
+  }
+
+  // 2. 辅助使用合规的 GitHub API 搜索（必须带关键字）
+  const SEARCH_QUERIES = [
+    'vless free filename:txt',
+    'vmess subscription filename:txt',
+    'trojan free filename:yaml'
+  ];
+
   for (const query of SEARCH_QUERIES) {
     try {
-      console.log(`正在: ${query}`);
-      const url = `https://api.github.com/search/code?q=${encodeURIComponent(query)}+sort:updated-desc`;
+      console.log(`正在通过 API 搜索: ${query}`);
+      const apiUrl = `https://api.github.com/search/code?q=${encodeURIComponent(query)}+sort:updated-desc`;
       
-      const response = await fetch(url, {
+      const response = await fetch(apiUrl, {
         headers: {
           'Accept': 'application/vnd.github+json',
           'User-Agent': 'Node-Fetcher-Bot',
@@ -37,12 +57,15 @@ async function searchGitHubNodes() {
         }
       });
 
-      if (!response.ok) continue;
+      if (!response.ok) {
+        console.warn(`API 搜索响应异常 (${response.status})，跳过该词`);
+        continue;
+      }
 
       const data = await response.json();
       if (!data.items) continue;
 
-      for (const item of data.items.slice(0, 5)) {
+      for (const item of data.items.slice(0, 3)) {
         const rawUrl = item.html_url
           .replace('github.com', 'raw.githubusercontent.com')
           .replace('/blob/', '/');
@@ -55,7 +78,7 @@ async function searchGitHubNodes() {
       }
       await new Promise(resolve => setTimeout(resolve, 1500));
     } catch (e) {
-      console.error(`抓取异常: ${e.message}`);
+      console.error(`API 搜索异常: ${e.message}`);
     }
   }
 
