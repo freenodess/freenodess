@@ -5,11 +5,18 @@ import { URL } from 'url';
 import YAML from 'yaml';
 
 
+
 const SEARCH_QUERIES = [
-  'vless free filename:txt',
-  'vmess free filename:yaml',
-  'trojan free subscription',
-  'clash node yaml'
+
+  "repo:barry-far/V2ray-Config",
+  "repo:0xRadikal/Free-v2ray-Configs",
+  "repo:zhuhaiuk/free-nodes",
+  "repo:awesome-vpn/awesome-vpn",
+  
+
+  "free v2ray config clash yaml subscription",
+  "vless vmess hysteria2 trojan anytls free nodes",
+  "clash_config.yaml free-nodes"
 ];
 
 
