@@ -19,15 +19,15 @@
 
 **Clash / Clash Verge / ClashX** 
 
-`[https://github.com/freenodess/freenodess/raw/main/nodes/clash.yaml](https://github.com/freenodess/freenodess/raw/main/output/clash.yaml)`
+``` https://github.com/freenodess/freenodess/raw/main/output/clash.yaml ```
 
 **sing-box**
 
-`[https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json](https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json)`
+```https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json````
 
 **v2rayN / v2rayNG / Shadowrocket / NekoBox** 
 
-`[https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt](https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt)`
+```https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt```
 
 [Database-classified shards: stable · all verified · protocol · country · network](https://github.com/freenodess/freenodess/tree/main/nodes)
 
