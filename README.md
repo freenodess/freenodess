@@ -13,22 +13,15 @@
 ### 注册地址：[【88云加速官网（点击注册）】](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
 
 
-<section class="card">
-  <h2>🚀 一键订阅</h2>
-  <p>复制对应客户端的 URL,粘贴到订阅导入框:</p>
-  <div class="urls">
-    <div class="url-row">
-      <strong>Clash / Clash Verge / ClashX</strong>
-      <code><a href="https://github.com/freenodess/freenodess/raw/main/output/clash.yaml" target="_blank" rel="noopener">https://github.com/freenodess/freenodess/raw/main/nodes/clash.yaml</a></code>
-    </div>
-    <div class="url-row">
-      <strong>sing-box</strong>
-      <code><a href="https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json" target="_blank" rel="noopener">https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json</a></code>
-    </div>
-    <div class="url-row">
-      <strong>v2rayN / v2rayNG / Shadowrocket / NekoBox</strong>
-      <code><a href="https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt" target="_blank" rel="noopener">https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt</a></code>
-    </div>
-  </div>
-  <p><a href="https://github.com/freenodess/freenodess/tree/main/nodes" target="_blank" rel="noopener">Database-classified shards: stable · all verified · protocol · country · network</a></p>
-</section>
+## 🚀 一键订阅
+
+复制对应客户端的 URL,粘贴到订阅导入框:
+
+**Clash / Clash Verge / ClashX** `[https://github.com/freenodess/freenodess/raw/main/nodes/clash.yaml](https://github.com/freenodess/freenodess/raw/main/output/clash.yaml)`
+
+**sing-box** `[https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json](https://github.com/freenodess/freenodess/raw/main/nodes/singbox.json)`
+
+**v2rayN / v2rayNG / Shadowrocket / NekoBox** `[https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt](https://github.com/freenodess/freenodess/raw/main/nodes/v2ray-base64.txt)`
+
+[Database-classified shards: stable · all verified · protocol · country · network](https://github.com/freenodess/freenodess/tree/main/nodes)
+
