@@ -1,0 +1,41 @@
+name: Fetch Free VPN Nodes
+
+on:
+  # 每 6 小时自动运行一次，可根据需要修改 Cron 表达式
+  schedule:
+    - cron: '0 */6 * * *'
+  # 允许在 GitHub 仓库 Actions 页面手动触发
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 赋予提交代码的权限
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Ensure Output Directory Exists
+        run: |
+          mkdir -p nodes
+
+      - name: Download Clash Nodes
+        run: |
+          curl -L -o out/clash.yaml 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml'
+
+      - name: Download V2Ray Nodes
+        run: |
+          curl -L -o out/v2ray-base64.txt 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt'
+
+      - name: Download Sing-box Nodes
+        run: |
+          curl -L -o out/singbox.json 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/singbox.json'
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.io'
+          git add out/
+          # 如果文件内容没有变化，跳过提交
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update free vpn nodes [skip ci]" && git push)
