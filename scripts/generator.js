@@ -86,9 +86,12 @@ async function searchGitHubNodes() {
 }
 
 
+// 2. 增强版解析与去重（同时兼容标准 URI 和 Base64 形式的 vmess 等）
 function parseAndCleanNodes(rawText) {
   const regex = /((vless|vmess|trojan|ss|ssr|anytls|hysteria|hysteria2):\/\/[^\s"'<>]+)/g;
-  const matches = rawText.match(regex) || [];
+  let matches = rawText.match(regex) || [];
+  
+  // 如果文本中夹杂了纯 Base64 的 vmess 订阅内容，也可以尝试全局解包（可选）
   return [...new Set(matches)];
 }
 
@@ -162,8 +165,33 @@ async function filterAndSelectTopNodes(nodeUris, limit = 50) {
 }
 
 
+// 5. 兼容各种奇葩格式的协议转换函数
 function convertUriToClashProxy(uri, index) {
   try {
+    // 兼容处理 vmess 的 base64 格式
+    if (uri.startsWith('vmess://')) {
+      const base64Part = uri.replace('vmess://', '');
+      try {
+        // 尝试将其作为 Base64 解码成 Clash 识别的 JSON 结构
+        const jsonStr = Buffer.from(base64Part, 'base64').toString('utf8');
+        const vmessConfig = JSON.parse(jsonStr);
+        return {
+          name: `Node_${index + 1}_${vmessConfig.add || 'vmess'}_${vmessConfig.port || 443}`,
+          type: 'vmess',
+          server: vmessConfig.add,
+          port: parseInt(vmessConfig.port, 10),
+          uuid: vmessConfig.id,
+          alterId: parseInt(vmessConfig.aid || '0', 10),
+          cipher: vmessConfig.scy || 'auto',
+          tls: vmessConfig.tls === 'tls' || vmessConfig.tls === true,
+          network: vmessConfig.net || 'tcp',
+          ...(vmessConfig.net === 'ws' && { 'ws-opts': { path: vmessConfig.path || '/' } })
+        };
+      } catch (err) {
+        // 如果不是 Base64 JSON，按普通 URL 处理
+      }
+    }
+
     const parsed = new URL(uri);
     const protocol = parsed.protocol.replace(':', '');
     const name = `Node_${index + 1}_${parsed.hostname.slice(0, 6)}_${parsed.port || '443'}`;
@@ -183,7 +211,6 @@ function convertUriToClashProxy(uri, index) {
         proxy['ws-opts'] = { path: parsed.searchParams.get('path') || '/' };
       }
     } else if (protocol === 'vmess') {
-
       proxy.type = 'vmess';
       proxy.uuid = parsed.username;
       proxy.alterId = parseInt(parsed.searchParams.get('aid') || '0', 10);
@@ -193,13 +220,11 @@ function convertUriToClashProxy(uri, index) {
       proxy.password = parsed.username;
       proxy.tls = true;
     } else if (protocol === 'ss') {
-      // Shadowsocks 协议 (aes-256-gcm:password@server:port)
       proxy.type = 'ss';
       if (parsed.username && parsed.password) {
         proxy.cipher = parsed.username;
         proxy.password = parsed.password;
       } else if (parsed.username) {
-       
         proxy.cipher = 'aes-256-gcm';
         proxy.password = parsed.username;
       }
@@ -210,19 +235,17 @@ function convertUriToClashProxy(uri, index) {
       proxy.password = parsed.username || parsed.password;
       proxy['skip-cert-verify'] = true;
     } else if (protocol === 'anytls') {
-      
       proxy.type = 'anytls';
       proxy.uuid = parsed.username;
       proxy.tls = true;
       proxy['skip-cert-verify'] = true;
     } else {
-      
       return null;
     }
 
     return proxy;
   } catch (e) {
-    return null;
+    return null; // 解析失败安全跳过
   }
 }
 
