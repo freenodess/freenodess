@@ -3,7 +3,7 @@ name: Fetch Free VPN Nodes
 on:
   # 每 6 小时自动运行一次，可根据需要修改 Cron 表达式
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */12 * * *'
   # 允许在 GitHub 仓库 Actions 页面手动触发
   workflow_dispatch:
 
