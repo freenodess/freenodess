@@ -34,6 +34,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # 👉 核心：先暂存本地改动，拉取最新代码后再恢复，最后再提交推送
+          git stash || true
           git pull origin main --rebase || true
+          git stash pop || true
+          
           git add output/
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update dynamic nodes [skip ci]" && git push)
