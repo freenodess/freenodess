@@ -24,7 +24,7 @@
 
 **sing-box**
 
-```https://raw.githubusercontent.com/freenodess/freenodess/refs/heads/main/nodes/singbox.json````
+`https://raw.githubusercontent.com/freenodess/freenodess/refs/heads/main/nodes/singbox.json`
 
 **v2rayN / v2rayNG / Shadowrocket / NekoBox** 
 
