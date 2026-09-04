@@ -62,7 +62,8 @@ function parseAndCleanNodes(rawText) {
 }
 
 
-function testNodeSpeed(nodeUri, timeout = 3000) {
+// 3. 优化后的 TCP 测速（更严格、更快速）
+function testNodeSpeed(nodeUri, timeout = 500) {
   return new Promise((resolve) => {
     try {
       const parsed = new URL(nodeUri);
@@ -79,7 +80,12 @@ function testNodeSpeed(nodeUri, timeout = 3000) {
         if (settled) return;
         settled = true;
         socket.destroy();
-        resolve(latency);
+        // 过滤掉超过 1000ms 的慢节点
+        if (latency !== null && latency > 1000) {
+          resolve(null);
+        } else {
+          resolve(latency);
+        }
       };
 
       socket.setTimeout(timeout);
@@ -94,12 +100,12 @@ function testNodeSpeed(nodeUri, timeout = 3000) {
   });
 }
 
-
-async function filterAndSelectTopNodes(nodeUris, limit = 100) {
-  console.log(`的 ${nodeUris.length} ...`);
+// 4. 并发测速并严格筛选
+async function filterAndSelectTopNodes(nodeUris, limit = 50) {
+  console.log(`开始对抓取到的 ${nodeUris.length} 个节点进行严格 TCP 连通性测试...`);
   
   let aliveNodes = [];
-  const batchSize = 25;
+  const batchSize = 30; // 增大并发提高速度
   
   for (let i = 0; i < nodeUris.length; i += batchSize) {
     const batch = nodeUris.slice(i, i + batchSize);
@@ -114,16 +120,15 @@ async function filterAndSelectTopNodes(nodeUris, limit = 100) {
     }
   }
 
- 
+  // 按照延迟升序排序
   aliveNodes.sort((a, b) => a.latency - b.latency);
-  console.log(`节点数: ${aliveNodes.length}`);
+  console.log(`测速完成！通过初步筛选的存活节点数: ${aliveNodes.length}`);
 
-
+  // 默认输出质量最高的前 50 个（宁缺毋滥，减少死节点）
   const selected = aliveNodes.slice(0, limit).map(item => item.uri);
-  console.log(` ${selected.length} 个节点。`);
+  console.log(`已成功挑选出延迟最优的前 ${selected.length} 个节点。`);
   return selected;
 }
-
 
 
 function convertUriToClashProxy(uri, index) {
