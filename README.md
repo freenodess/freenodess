@@ -10,7 +10,7 @@
 ### 🤖 流媒体/ChatGPT全部解锁
 ### 🔥 大流量下载专用节点
 ### 🤝AFF推广佣金40%
-### ✈️ TG群组 (https://t.me/+gfS8zRPNWMdmMjg1)          🔗 官方网站 (https://88cloud.pages.dev/)
+### ✈️ [TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          🔗[ 官方网站 ](https://88cloud.pages.dev/)
 ### 注册地址：[【88云加速官网（点击注册）】](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
 
 
