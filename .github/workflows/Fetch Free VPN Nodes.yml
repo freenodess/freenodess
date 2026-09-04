@@ -1,7 +1,7 @@
 name: Fetch Free VPN Nodes
 
 on:
-  # 每 6 小时自动运行一次，可根据需要修改 Cron 表达式
+  # 每 12 小时自动运行一次
   schedule:
     - cron: '0 */12 * * *'
   # 允许在 GitHub 仓库 Actions 页面手动触发
@@ -16,21 +16,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Ensure Output Directory Exists
+      - name: Download Node Files
         run: |
-          mkdir -p ./nodes
-
-      - name: Download Clash Nodes
-        run: |
-          curl -L -o out/clash.yaml 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml'
-
-      - name: Download V2Ray Nodes
-        run: |
-          curl -L -o out/v2ray-base64.txt 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt'
-
-      - name: Download Sing-box Nodes
-        run: |
-          curl -L -o out/singbox.json 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/singbox.json'
+          mkdir -p nodes
+          curl -L -o nodes/clash.yaml 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml'
+          curl -L -o nodes/v2ray-base64.txt 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt'
+          curl -L -o nodes/singbox.json 'https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/singbox.json'
 
       - name: Commit and Push Changes
         run: |
