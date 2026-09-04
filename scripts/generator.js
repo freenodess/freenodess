@@ -94,7 +94,7 @@ function parseAndCleanNodes(rawText) {
 
 
 // 3. 优化后的 TCP 测速（更严格、更快速）
-function testNodeSpeed(nodeUri, timeout = 500) {
+function testNodeSpeed(nodeUri, timeout = 1500) {
   return new Promise((resolve) => {
     try {
       const parsed = new URL(nodeUri);
