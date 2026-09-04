@@ -8,10 +8,11 @@ import YAML from 'yaml';
 
 const SEARCH_QUERIES = [
 
-  "repo:barry-far/V2ray-Config",
-  "repo:0xRadikal/Free-v2ray-Configs",
-  "repo:zhuhaiuk/free-nodes",
-  "repo:awesome-vpn/awesome-vpn",
+  "repo:Au1rxx/free-vpn-subscriptions",
+ // "repo:barry-far/V2ray-Config",
+  //"repo:0xRadikal/Free-v2ray-Configs",
+  //"repo:zhuhaiuk/free-nodes",
+  //"repo:awesome-vpn/awesome-vpn",
   
 
   "free v2ray config clash yaml subscription",
