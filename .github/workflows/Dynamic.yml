@@ -20,9 +20,10 @@ jobs:
         with:
           node-version: '20'
 
-    
-      - name: Install dependencies
-        run: npm install
+      - name: Init and Install dependencies
+        run: |
+          npm init -y
+          npm install yaml
 
       - name: Run dynamic fetcher script
         env:
