@@ -18,7 +18,7 @@ jobs:
 
       - name: Ensure Output Directory Exists
         run: |
-          mkdir -p nodes
+          mkdir -p ./nodes
 
       - name: Download Clash Nodes
         run: |
