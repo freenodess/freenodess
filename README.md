@@ -18,6 +18,11 @@
 
 复制对应客户端的 URL,粘贴到订阅导入框:
 
+**v2rayN / v2rayNG / Shadowrocket / NekoBox** 
+
+      https://raw.githubusercontent.com/freenodess/freenodess/refs/heads/main/nodes/v2ray-base64.txt
+
+
 **Clash / Clash Verge / ClashX** 
 
       https://raw.githubusercontent.com/freenodess/freenodess/refs/heads/main/nodes/clash.yaml
@@ -25,10 +30,6 @@
 **sing-box**
 
       https://raw.githubusercontent.com/freenodess/freenodess/refs/heads/main/nodes/singbox.json
-
-**v2rayN / v2rayNG / Shadowrocket / NekoBox** 
-
-      https://raw.githubusercontent.com/freenodess/freenodess/refs/heads/main/nodes/v2ray-base64.txt
 
 
 ## Windows、Android、IOS、macOS 全平台客户端
