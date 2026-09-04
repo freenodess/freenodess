@@ -4,7 +4,7 @@
 
 ## Hiddify For Android 界面预览
 
-![v2rayNG For Windows 下载地址及使用教程 科学上网客户端下载使用汇总 ](./assets/131623-1.png)*Hiddify For Android 界面预览*
+![v2rayNG For Windows 下载地址及使用教程 科学上网客户端下载使用汇总 ](./docs/assets/131623-1.png)*Hiddify For Android 界面预览*
 
 ## Hiddify For Android 下载
 
