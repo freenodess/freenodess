@@ -4,146 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-  - name: Node_1_104.18_80
-    server: 104.18.21.81
-    port: 80
-    type: vless
-    uuid: f230236c-ff19-4300-a5be-26fb5081f086
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: Node_2_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: 7bf3545f-f692-4251-b35a-1868db3a34ac
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_3_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: 7574fa79-8978-4527-bdb0-3e05e904ce43
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_4_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: b4bedc7d-552f-467c-b2e6-aa50d438b927
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_5_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: 2f8c5e4a-ccb2-4da8-bbfc-ab5d1e31f2df
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_6_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: 80917ae2-b44b-418b-847f-f23daee848da
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_7_45.85._2083
-    server: 45.85.119.44
-    port: 2083
-    type: vless
-    uuid: 01973bf7-048a-4dc6-a82b-2fa3be7046a5
-    tls: true
-    network: grpc
-  - name: Node_8_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: aeb98888-2c68-4fbf-a4ed-686dce40cbea
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_9_45.130_443
-    server: 45.130.125.126
-    port: 443
-    type: vless
-    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /rdfgtws
-  - name: Node_10_45.130_443
-    server: 45.130.125.160
+  - name: Node_1_89.116_443
+    server: 89.116.46.68
     port: 443
     type: trojan
-    password: humanity
+    password: de4dbc41-fe13-4498-b5b4-083e451270f6
     tls: true
-  - name: Node_11_104.23_443
-    server: 104.238.68.240
-    port: 443
-    type: vless
-    uuid: b991b390-dd0f-4061-9150-bee0cb467bce
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?ed=2560&https://t.me/WangCai2🇨🇳
-  - name: Node_12_104.16_8443
-    server: 104.16.72.70
-    port: 8443
-    type: vless
-    uuid: e1ea855f-d0c2-5ed2-a454-294bb73c0cee
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ZoRoVpn
-  - name: Node_13_172.66_8880
-    server: 172.66.44.193
-    port: 8880
-    type: vless
-    uuid: 22b3cbba-e6ac-485a-8351-976a0415eab9
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-  - name: Node_14_104.21_443
-    server: 104.21.46.85
-    port: 443
-    type: vless
-    uuid: 9a4bc15d-a7d4-4181-9485-405629c36894
-    tls: true
-    network: ws
-    ws-opts:
-      path: /TELEGRAM@vlees_v2rayng/?ed=2048
-  - name: Node_15_151.10_80
-    server: 151.101.194.219
-    port: 80
-    type: vless
-    uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
-    tls: false
-    network: ws
-    ws-opts:
-      path: /olem/ws?ed=1024
-  - name: Node_16_151.10_80
-    server: 151.101.3.8
-    port: 80
-    type: vless
-    uuid: 3ef261ef-db58-4e17-8b41-8a6a2f64a310
-    tls: false
-    network: ws
-    ws-opts:
-      path: /telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee,telegram-v2safee?ed=2095
-  - name: Node_17_45.131_443
+  - name: Node_2_45.131_443
     server: 45.131.209.205
     port: 443
     type: vless
@@ -152,25 +19,16 @@ proxies:
     network: ws
     ws-opts:
       path: /vless
-  - name: Node_18_104.16_443
-    server: 104.16.219.215
-    port: 443
+  - name: Node_3_104.18_80
+    server: 104.18.21.81
+    port: 80
     type: vless
-    uuid: f0b09670-9e9a-48f2-acd5-5b6cc33c83c5
-    tls: true
+    uuid: f230236c-ff19-4300-a5be-26fb5081f086
+    tls: false
     network: ws
     ws-opts:
-      path: /vlws?ed=2048
-  - name: Node_19_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: a7cf209e-533e-4d27-ba0d-f5421de3dd18
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_20_104.17_443
+      path: /
+  - name: Node_4_104.17_443
     server: 104.17.14.48
     port: 443
     type: vless
@@ -179,112 +37,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vless
-  - name: Node_21_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: b44700ab-a0fa-46f4-8612-7374be7ffe14
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_22_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: fae287e6-544d-4393-8d6e-89268f56dffd
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_23_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: fa3f32a7-9250-4543-aa31-91cdfe7e3ad8
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_24_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: 0a4ece02-5677-42e5-b813-d28b6946ea28
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_25_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: e949d1ec-6d6c-4fc4-bf2f-032fca13bde2
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_26_104.17_443
-    server: 104.17.14.48
-    port: 443
-    type: vless
-    uuid: 2af5dfe8-352a-4ec3-aa1a-8116de8d339f
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_27_104.21_8080
-    server: 104.21.11.152
-    port: 8080
-    type: vless
-    uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
-    tls: false
-    network: ws
-    ws-opts:
-      path: /eyJqdW5rIjoiOHNqQ3Bqc2dTZlppTEl1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19?ed=2560
-  - name: Node_28_45.130_443
-    server: 45.130.125.112
-    port: 443
-    type: vless
-    uuid: 7c7c2a41-bf8c-4dcc-8cca-5e6776da616c
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws?ed=2580
-  - name: Node_29_104.16_443
-    server: 104.16.174.36
-    port: 443
-    type: vless
-    uuid: 7c7c2a41-bf8c-4dcc-8cca-5e6776da616c
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ws?ed=2580
-  - name: Node_30_45.130_443
-    server: 45.130.125.158
-    port: 443
-    type: vless
-    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-    tls: true
-    network: ws
-    ws-opts:
-      path: /?TELEGRAM-YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy?ed=512
-  - name: Node_31_104.16_443
-    server: 104.16.72.70
-    port: 443
-    type: trojan
-    password: 6c862415-30d2-4813-8e49-42e99a0bd415
-    tls: true
-  - name: Node_32_104.16_80
-    server: 104.16.72.70
-    port: 80
-    type: vless
-    uuid: a3ca2f6f-3905-406b-b15e-873bed123033
-    tls: false
-    network: ws
-    ws-opts:
-      path: /vless
-  - name: Node_33_104.16_443
+  - name: Node_5_104.16_443
     server: 104.16.72.70
     port: 443
     type: vless
@@ -293,67 +46,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Node_34_45.130_443
-    server: 45.130.125.126
-    port: 443
-    type: trojan
-    password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-    tls: true
-  - name: Node_35_45.130_443
-    server: 45.130.125.126
-    port: 443
-    type: vless
-    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /rdfgtws
-  - name: Node_36_104.17_443
-    server: 104.17.121.43
-    port: 443
-    type: trojan
-    password: humanity
-    tls: true
-  - name: Node_37_151.10_443
-    server: 151.101.110.219
-    port: 443
-    type: trojan
-    password: MITIVPN
-    tls: true
-  - name: Node_38_104.26_443
-    server: 104.26.12.222
-    port: 443
-    type: vless
-    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-    tls: true
-    network: ws
-    ws-opts:
-      path: /udfyfws
-  - name: Node_39_104.16_443
-    server: 104.16.75.224
-    port: 443
-    type: vless
-    uuid: b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c
-    tls: true
-    network: ws
-    ws-opts:
-      path: /page=2
-  - name: Node_40_104.16_443
-    server: 104.16.174.121
-    port: 443
-    type: trojan
-    password: humanity
-    tls: true
-  - name: Node_41_159.11_443
-    server: 159.112.235.52
-    port: 443
-    type: vless
-    uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
-    tls: true
-    network: ws
-    ws-opts:
-      path: /odiyfws
-  - name: Node_42_45.130_2053
+  - name: Node_6_45.130_2053
     server: 45.130.125.126
     port: 2053
     type: vless
@@ -362,43 +55,7 @@ proxies:
     network: ws
     ws-opts:
       path: /eyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19?ed
-  - name: Node_43_45.130_443
-    server: 45.130.125.126
-    port: 443
-    type: vless
-    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /rdfgtws
-  - name: Node_44_172.64_443
-    server: 172.64.32.75
-    port: 443
-    type: vless
-    uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
-    tls: true
-    network: ws
-    ws-opts:
-      path: /poiuyws
-  - name: Node_45_173.24_443
-    server: 173.245.58.75
-    port: 443
-    type: vless
-    uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hdgrbws
-  - name: Node_46_45.130_2053
-    server: 45.130.125.126
-    port: 2053
-    type: vless
-    uuid: 04e28e6c-7a6c-4ec7-bed2-3da8f7c9edce
-    tls: true
-    network: ws
-    ws-opts:
-      path: /eyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19?ed
-  - name: Node_47_45.130_443
+  - name: Node_7_45.130_443
     server: 45.130.125.158
     port: 443
     type: vless
@@ -407,7 +64,285 @@ proxies:
     network: ws
     ws-opts:
       path: /page=2
-  - name: Node_48_172.67_443
+  - name: Node_8_104.16_8443
+    server: 104.16.72.70
+    port: 8443
+    type: vless
+    uuid: e1ea855f-d0c2-5ed2-a454-294bb73c0cee
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ZoRoVpn
+  - name: Node_9_23.150_8388
+    server: 23.150.248.20
+    port: 8388
+    type: ss
+    cipher: aes-256-gcm
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo%3D
+  - name: Node_10_104.26_2083
+    server: 104.26.13.54
+    port: 2083
+    type: vless
+    uuid: fc8a0708-951a-4027-860f-2a154ebc4dd7
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_11_199.23_443
+    server: 199.232.78.159
+    port: 443
+    type: vless
+    uuid: 27315937-5479-49fd-867d-6b2f17246708
+    tls: true
+    network: ws
+    ws-opts:
+      path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+  - name: Node_12_104.26_443
+    server: 104.26.14.21
+    port: 443
+    type: vless
+    uuid: d85ea913-7dfa-44b0-bd66-33414e897991
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_13_172.67_443
+    server: 172.67.149.60
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_14_104.18_443
+    server: 104.18.37.228
+    port: 443
+    type: vless
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /sg-melbi
+  - name: Node_15_104.21_443
+    server: 104.21.76.194
+    port: 443
+    type: trojan
+    password: Telegram_healer_config
+    tls: true
+  - name: Node_16_104.21_443
+    server: 104.21.71.238
+    port: 443
+    type: vless
+    uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+    tls: false
+    network: tcp
+  - name: Node_17_188.11_443
+    server: 188.114.97.6
+    port: 443
+    type: vless
+    uuid: 0f0b7f69-78e1-4e9e-8b35-0986444613e4
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+  - name: Node_18_188.11_8080
+    server: 188.114.97.6
+    port: 8080
+    type: vless
+    uuid: 91875754-7fcc-5ba9-9573-5a43215dfd0f
+    tls: false
+    network: ws
+    ws-opts:
+      path: /sync
+  - name: Node_19_108.16_8443
+    server: 108.162.198.43
+    port: 8443
+    type: vless
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_20_104.18_443
+    server: 104.18.152.244
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_21_188.11_443
+    server: 188.114.98.0
+    port: 443
+    type: vless
+    uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+  - name: Node_22_172.64_2053
+    server: 172.64.147.1
+    port: 2053
+    type: vless
+    uuid: e7af22d8-dee7-2af7-e515-c27800000013
+    tls: true
+    network: ws
+    ws-opts:
+      path: /sync
+  - name: Node_23_104.16_443
+    server: 104.16.219.215
+    port: 443
+    type: vless
+    uuid: f0b09670-9e9a-48f2-acd5-5b6cc33c83c5
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vlws?ed=2048
+  - name: Node_24_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: b44700ab-a0fa-46f4-8612-7374be7ffe14
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_25_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: b4bedc7d-552f-467c-b2e6-aa50d438b927
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_26_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 473ac790-9497-4094-8dac-e3482034b470
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_27_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: fae287e6-544d-4393-8d6e-89268f56dffd
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_28_45.85._2083
+    server: 45.85.119.44
+    port: 2083
+    type: vless
+    uuid: 01973bf7-048a-4dc6-a82b-2fa3be7046a5
+    tls: true
+    network: grpc
+  - name: Node_29_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: fa3f32a7-9250-4543-aa31-91cdfe7e3ad8
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_30_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 0a4ece02-5677-42e5-b813-d28b6946ea28
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_31_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: aeb98888-2c68-4fbf-a4ed-686dce40cbea
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_32_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 2af5dfe8-352a-4ec3-aa1a-8116de8d339f
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_33_45.130_443
+    server: 45.130.125.112
+    port: 443
+    type: vless
+    uuid: 7c7c2a41-bf8c-4dcc-8cca-5e6776da616c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws?ed=2580
+  - name: Node_34_45.130_443
+    server: 45.130.125.126
+    port: 443
+    type: vless
+    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /rdfgtws
+  - name: Node_35_104.26_443
+    server: 104.26.12.222
+    port: 443
+    type: vless
+    uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+    tls: true
+    network: ws
+    ws-opts:
+      path: /udfyfws
+  - name: Node_36_104.16_443
+    server: 104.16.174.121
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_37_159.11_443
+    server: 159.112.235.52
+    port: 443
+    type: vless
+    uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
+    tls: true
+    network: ws
+    ws-opts:
+      path: /odiyfws
+  - name: Node_38_45.130_443
+    server: 45.130.125.126
+    port: 443
+    type: vless
+    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /rdfgtws
+  - name: Node_39_173.24_443
+    server: 173.245.58.75
+    port: 443
+    type: vless
+    uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hdgrbws
+  - name: Node_40_45.130_2053
+    server: 45.130.125.126
+    port: 2053
+    type: vless
+    uuid: 04e28e6c-7a6c-4ec7-bed2-3da8f7c9edce
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoiTG1BbkpIVHV2S21jNjRNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTQ2LjEwMy4xMTMuMTU4Il19?ed
+  - name: Node_41_172.67_443
     server: 172.67.147.94
     port: 443
     type: vless
@@ -416,7 +351,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Node_49_172.66_2096
+  - name: Node_42_172.66_2096
     server: 172.66.46.235
     port: 2096
     type: vless
@@ -425,7 +360,7 @@ proxies:
     network: ws
     ws-opts:
       path: /keDRL5Jm7OKgFXi6?ed=2560
-  - name: Node_50_172.67_2087
+  - name: Node_43_172.67_2087
     server: 172.67.161.104
     port: 2087
     type: vless
@@ -434,25 +369,7 @@ proxies:
     network: ws
     ws-opts:
       path: /?ed=2048
-  - name: Node_51_104.21_443
-    server: 104.21.46.197
-    port: 443
-    type: vless
-    uuid: c0fbd664-9693-4cc0-aa73-9247dbbadbeb
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-  - name: Node_52_172.67_443
-    server: 172.67.131.154
-    port: 443
-    type: vless
-    uuid: c110db8f-72c8-52a2-8ae9-dfbfd9704035
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless-ws/?ed=2048
-  - name: Node_53_172.67_2096
+  - name: Node_44_172.67_2096
     server: 172.67.70.92
     port: 2096
     type: vless
@@ -461,7 +378,110 @@ proxies:
     network: ws
     ws-opts:
       path: /TG-AiLuMao/
-  - name: Node_54_23.227_2053
+  - name: Node_45_172.67_2087
+    server: 172.67.200.189
+    port: 2087
+    type: vless
+    uuid: 84e3d3dc-0431-4e01-bcdd-90474f0c1a47
+    tls: true
+    network: httpupgrade
+  - name: Node_46_188.11_8080
+    server: 188.114.97.6
+    port: 8080
+    type: vless
+    uuid: e3c7c198-2b02-42c2-b78f-22dfc078219c
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560
+  - name: Node_47_104.19_443
+    server: 104.19.140.106
+    port: 443
+    type: vless
+    uuid: ecd01b9c-8172-41a4-be72-6167fd7d932d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /139.99.124.165=443
+  - name: Node_48_104.18_443
+    server: 104.18.32.47
+    port: 443
+    type: vless
+    uuid: 55b0463c-e27f-455b-a25a-70123297b9f4
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws
+  - name: Node_49_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 7574fa79-8978-4527-bdb0-3e05e904ce43
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_50_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 2f8c5e4a-ccb2-4da8-bbfc-ab5d1e31f2df
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_51_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 80917ae2-b44b-418b-847f-f23daee848da
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_52_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: e949d1ec-6d6c-4fc4-bf2f-032fca13bde2
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_53_45.130_443
+    server: 45.130.125.158
+    port: 443
+    type: vless
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?TELEGRAM-YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy_YamYamProxy?ed=512
+  - name: Node_54_45.130_443
+    server: 45.130.125.126
+    port: 443
+    type: trojan
+    password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+    tls: true
+  - name: Node_55_104.21_443
+    server: 104.21.46.197
+    port: 443
+    type: vless
+    uuid: c0fbd664-9693-4cc0-aa73-9247dbbadbeb
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_56_104.21_443
+    server: 104.21.80.12
+    port: 443
+    type: vless
+    uuid: e1cf1cbc-a1b0-4db8-86b0-45dd2e8a68da
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_57_23.227_2053
     server: 23.227.38.202
     port: 2053
     type: vless
@@ -470,7 +490,7 @@ proxies:
     network: ws
     ws-opts:
       path: /8EZOONoHtne638Vw/MTI5LjE1OS4yNDEuMTcy
-  - name: Node_55_188.11_443
+  - name: Node_58_188.11_443
     server: 188.114.99.207
     port: 443
     type: vless
@@ -479,33 +499,6 @@ proxies:
     network: ws
     ws-opts:
       path: /Telegram-------@mobilesignal/?ed=2048
-  - name: Node_56_104.21_2053
-    server: 104.21.4.56
-    port: 2053
-    type: vless
-    uuid: 1ef91e6f-7522-4ded-84ea-4523dd2a15d6
-    tls: true
-    network: ws
-    ws-opts:
-      path: /
-  - name: Node_57_172.66_443
-    server: 172.66.44.101
-    port: 443
-    type: vless
-    uuid: 34a83286-ba4e-4f0a-ac08-77a95469eeaf
-    tls: true
-    network: ws
-    ws-opts:
-      path: /Telegram@Linkvws?ed=2560
-  - name: Node_58_188.11_443
-    server: 188.114.99.91
-    port: 443
-    type: vless
-    uuid: 4f9219f6-ba56-4e5a-a676-0978d8b613e4
-    tls: true
-    network: ws
-    ws-opts:
-      path: /Telegram@V2ray_Alpha/?ed=2560
   - name: Node_59_188.11_443
     server: 188.114.99.91
     port: 443
@@ -524,70 +517,115 @@ proxies:
     network: ws
     ws-opts:
       path: /Telegram@Linkvws?ed=2048
-  - name: Node_61_104.21_8443
-    server: 104.21.90.210
-    port: 8443
+  - name: Node_61_162.15_8880
+    server: 162.159.133.233
+    port: 8880
     type: vless
-    uuid: a8a09765-7681-47ba-9ea0-e0ae79d51088
-    tls: true
-    network: ws
-    ws-opts:
-      path: /Telegram-@V2ray_Alpha/?ed=2048
-  - name: Node_62_151.10_80
-    server: 151.101.66.228
-    port: 80
-    type: vless
-    uuid: 568279ce-dd78-4f33-9e5c-64b18c5505db
+    uuid: 82fdc77c-5def-4930-89a6-afb5cc609d4b
     tls: false
     network: ws
     ws-opts:
-      path: /olem/ws?ed=1024
-  - name: Node_63_151.10_80
-    server: 151.101.66.228
-    port: 80
+      path: /VPN_PROXY66.VPN_PROXY66
+  - name: Node_62_188.11_2095
+    server: 188.114.97.6
+    port: 2095
     type: vless
-    uuid: b4b4a987-1cbb-490c-a060-8309cabc93b5
+    uuid: d59a47d8-f344-4a0b-81d6-9f68cb8be873
     tls: false
     network: ws
     ws-opts:
-      path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
-  - name: Node_64_151.10_80
-    server: 151.101.130.228
-    port: 80
-    type: vless
-    uuid: b4b4a987-1cbb-490c-a060-8309cabc93b5
-    tls: false
-    network: ws
-    ws-opts:
-      path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
-  - name: Node_65_45.130_443
-    server: 45.130.125.126
+      path: /?ed=2048
+  - name: Node_63_199.23_443
+    server: 199.232.78.159
     port: 443
     type: vless
-    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-    tls: true
-    network: ws
-    ws-opts:
-      path: /rdfgtws
-  - name: Node_66_104.16_8443
-    server: 104.16.72.70
-    port: 8443
-    type: vless
-    uuid: EarnMoneyarz-ZoRoVpn
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ZoRoVpn
-  - name: Node_67_104.21_443
-    server: 104.21.80.12
-    port: 443
-    type: vless
-    uuid: e1cf1cbc-a1b0-4db8-86b0-45dd2e8a68da
+    uuid: e0454af2-6fe9-4983-a55d-05e1da202602
     tls: true
     network: ws
     ws-opts:
       path: /
-  - name: Node_68_104.21_443
+  - name: Node_64_151.10_443
+    server: 151.101.109.223
+    port: 443
+    type: vless
+    uuid: c8541f02-4efd-401d-beb7-dc017b12ee94
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_65_130.25_443
+    server: 130.250.137.171
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_66_172.66_8443
+    server: 172.66.149.243
+    port: 8443
+    type: vless
+    uuid: ededaf7e-ad86-40bc-b837-b1403c56f311
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoid2tkV0g2R3kxYlNTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+  - name: Node_67_188.11_8080
+    server: 188.114.97.6
+    port: 8080
+    type: vless
+    uuid: 0779dc74-2464-461f-90ef-874e4cae7fae
+    tls: false
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoiUHQ4YzBma3IxczlPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed
+  - name: Node_68_188.11_443
+    server: 188.114.97.7
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_69_45.130_443
+    server: 45.130.125.160
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_70_104.16_443
+    server: 104.16.75.224
+    port: 443
+    type: vless
+    uuid: b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /page=2
+  - name: Node_71_104.23_443
+    server: 104.238.68.240
+    port: 443
+    type: vless
+    uuid: b991b390-dd0f-4061-9150-bee0cb467bce
+    tls: true
+    network: ws
+    ws-opts:
+      path: /?ed=2560&https://t.me/WangCai2🇨🇳
+  - name: Node_72_172.66_8880
+    server: 172.66.44.193
+    port: 8880
+    type: vless
+    uuid: 22b3cbba-e6ac-485a-8351-976a0415eab9
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_73_172.67_443
+    server: 172.67.131.154
+    port: 443
+    type: vless
+    uuid: c110db8f-72c8-52a2-8ae9-dfbfd9704035
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless-ws/?ed=2048
+  - name: Node_74_104.21_443
     server: 104.21.19.239
     port: 443
     type: vless
@@ -596,14 +634,34 @@ proxies:
     network: ws
     ws-opts:
       path: /pQJrMakybriRTAd8?ed=2560
-  - name: Node_69_172.67_2087
-    server: 172.67.200.189
-    port: 2087
+  - name: Node_75_104.21_2053
+    server: 104.21.4.56
+    port: 2053
     type: vless
-    uuid: 84e3d3dc-0431-4e01-bcdd-90474f0c1a47
+    uuid: 1ef91e6f-7522-4ded-84ea-4523dd2a15d6
     tls: true
-    network: httpupgrade
-  - name: Node_70_185.14_443
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_76_172.66_443
+    server: 172.66.44.101
+    port: 443
+    type: vless
+    uuid: 34a83286-ba4e-4f0a-ac08-77a95469eeaf
+    tls: true
+    network: ws
+    ws-opts:
+      path: /Telegram@Linkvws?ed=2560
+  - name: Node_77_188.11_443
+    server: 188.114.99.91
+    port: 443
+    type: vless
+    uuid: 4f9219f6-ba56-4e5a-a676-0978d8b613e4
+    tls: true
+    network: ws
+    ws-opts:
+      path: /Telegram@V2ray_Alpha/?ed=2560
+  - name: Node_78_185.14_443
     server: 185.146.173.115
     port: 443
     type: vless
@@ -612,16 +670,176 @@ proxies:
     network: ws
     ws-opts:
       path: /@Telegram@Linkvws?ed=2560
-  - name: Node_71_104.17_443
+  - name: Node_79_104.21_8443
+    server: 104.21.90.210
+    port: 8443
+    type: vless
+    uuid: a8a09765-7681-47ba-9ea0-e0ae79d51088
+    tls: true
+    network: ws
+    ws-opts:
+      path: /Telegram-@V2ray_Alpha/?ed=2048
+  - name: Node_80_104.16_2083
+    server: 104.16.155.170
+    port: 2083
+    type: vless
+    uuid: 50414e45-4c5f-5a45-5553-bb2d0bc74f3c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /stream/PANEL_ZEUS/bb2d0bc74f3c
+  - name: Node_81_104.16_443
+    server: 104.16.72.41
+    port: 443
+    type: vless
+    uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+    tls: true
+    network: ws
+    ws-opts:
+      path: /rsedgws
+  - name: Node_82_104.17_443
     server: 104.17.14.48
     port: 443
     type: vless
-    uuid: 473ac790-9497-4094-8dac-e3482034b470
+    uuid: a7cf209e-533e-4d27-ba0d-f5421de3dd18
     tls: true
     network: ws
     ws-opts:
       path: /vless
-  - name: Node_72_104.18_443
+  - name: Node_83_104.16_443
+    server: 104.16.72.70
+    port: 443
+    type: trojan
+    password: 6c862415-30d2-4813-8e49-42e99a0bd415
+    tls: true
+  - name: Node_84_104.16_80
+    server: 104.16.72.70
+    port: 80
+    type: vless
+    uuid: a3ca2f6f-3905-406b-b15e-873bed123033
+    tls: false
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_85_172.64_443
+    server: 172.64.32.75
+    port: 443
+    type: vless
+    uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+    tls: true
+    network: ws
+    ws-opts:
+      path: /poiuyws
+  - name: Node_86_104.17_443
+    server: 104.17.14.48
+    port: 443
+    type: vless
+    uuid: 7bf3545f-f692-4251-b35a-1868db3a34ac
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+  - name: Node_87_45.130_443
+    server: 45.130.125.126
+    port: 443
+    type: vless
+    uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+    tls: true
+    network: ws
+    ws-opts:
+      path: /rdfgtws
+  - name: Node_88_104.19_443
+    server: 104.19.35.170
+    port: 443
+    type: vless
+    uuid: bd8c736e-cae1-43d7-b573-9672e6ca4989
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vl/zXLTmz3hE3szn64f?ed=2560
+  - name: Node_89_188.42_2087
+    server: 188.42.88.252
+    port: 2087
+    type: trojan
+    password: Go5e2nKM9U
+    tls: true
+  - name: Node_90_172.67_443
+    server: 172.67.138.253
+    port: 443
+    type: vless
+    uuid: d9f94532-c4d4-4f94-ba23-6eb6d35bfc7d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoiZW5GMjJSRmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+  - name: Node_91_172.64_2082
+    server: 172.64.158.146
+    port: 2082
+    type: vless
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+  - name: Node_92_172.67_443
+    server: 172.67.182.245
+    port: 443
+    type: vless
+    uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+  - name: Node_93_104.16_443
+    server: 104.16.174.36
+    port: 443
+    type: vless
+    uuid: 7c7c2a41-bf8c-4dcc-8cca-5e6776da616c
+    tls: true
+    network: ws
+    ws-opts:
+      path: /ws?ed=2580
+  - name: Node_94_104.17_443
+    server: 104.17.121.43
+    port: 443
+    type: trojan
+    password: humanity
+    tls: true
+  - name: Node_95_172.67_2087
+    server: 172.67.67.180
+    port: 2087
+    type: vless
+    uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_96_45.85._443
+    server: 45.85.119.120
+    port: 443
+    type: vless
+    uuid: 5b601433-e7c0-4ec6-8249-1ed052af11da
+    tls: true
+    network: grpc
+  - name: Node_97_104.16_2096
+    server: 104.16.7.70
+    port: 2096
+    type: vless
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Node_98_104.21_443
+    server: 104.21.46.85
+    port: 443
+    type: vless
+    uuid: 9a4bc15d-a7d4-4181-9485-405629c36894
+    tls: true
+    network: ws
+    ws-opts:
+      path: /TELEGRAM@vlees_v2rayng/?ed=2048
+  - name: Node_99_104.18_443
     server: 104.18.1.20
     port: 443
     type: vless
@@ -630,415 +848,227 @@ proxies:
     network: ws
     ws-opts:
       path: Telegram-------PROXY_MTM-_-_-_-Telegram-------PROXY_MTM/?ed=2048
-  - name: Node_73_15.204_443
-    server: 15.204.151.4
-    port: 443
+  - name: Node_100_172.64_2082
+    server: 172.64.150.28
+    port: 2082
     type: vless
-    uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-    tls: true
-    network: tcp
-  - name: Node_74_15.204_443
-    server: 15.204.165.202
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_75_15.204_443
-    server: 15.204.165.202
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_76_15.204_443
-    server: 15.204.184.92
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_77_15.204_443
-    server: 15.204.184.92
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_78_15.204_443
-    server: 15.204.184.159
-    port: 443
-    type: vless
-    uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-    tls: true
-    network: tcp
-  - name: Node_79_15.204_443
-    server: 15.204.184.159
-    port: 443
-    type: vless
-    uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-    tls: true
-    network: tcp
-  - name: Node_80_15.204_443
-    server: 15.204.188.104
-    port: 443
-    type: vless
-    uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-    tls: true
-    network: tcp
-  - name: Node_81_15.204_443
-    server: 15.204.188.104
-    port: 443
-    type: vless
-    uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-    tls: true
-    network: tcp
-  - name: Node_82_51.81._443
-    server: 51.81.124.80
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_83_51.81._443
-    server: 51.81.124.80
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_84_15.204_443
-    server: 15.204.151.4
-    port: 443
-    type: vless
-    uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-    tls: true
-    network: tcp
-  - name: Node_85_15.204_443
-    server: 15.204.191.46
-    port: 443
-    type: vless
-    uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-    tls: true
-    network: tcp
-  - name: Node_86_51.81._443
-    server: 51.81.37.5
-    port: 443
-    type: vless
-    uuid: ea286109-d20f-415e-849e-4af20ab04b65
-    tls: true
-    network: tcp
-  - name: Node_87_147.13_443
-    server: 147.135.4.2
-    port: 443
-    type: vless
-    uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-    tls: true
-    network: tcp
-  - name: Node_88_69.164_10878
-    server: 69.164.240.83
-    port: 10878
-    type: ss
-    cipher: aes-256-gcm
-    password: YWVzLTEyOC1nY206dDZkMjZpZDBwanpkbzN4NXd0bGY%3D
-  - name: Node_89_15.204_443
-    server: 15.204.153.78
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_90_15.204_443
-    server: 15.204.153.78
-    port: 443
-    type: vless
-    uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40
-    tls: true
-    network: tcp
-  - name: Node_91_15.204_443
-    server: 15.204.191.46
-    port: 443
-    type: vless
-    uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-    tls: true
-    network: tcp
-  - name: Node_92_51.81._443
-    server: 51.81.37.5
-    port: 443
-    type: vless
-    uuid: ea286109-d20f-415e-849e-4af20ab04b65
-    tls: true
-    network: tcp
-  - name: Node_93_15.204_443
-    server: 15.204.151.74
-    port: 443
-    type: vless
-    uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
-    tls: true
-    network: tcp
-  - name: Node_94_15.204_443
-    server: 15.204.151.74
-    port: 443
-    type: vless
-    uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
-    tls: true
-    network: tcp
-  - name: Node_95_147.13_443
-    server: 147.135.4.2
-    port: 443
-    type: vless
-    uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-    tls: true
-    network: tcp
-  - name: Node_96_191.10_443
-    server: 191.101.251.210
-    port: 443
-    type: vless
-    uuid: 0151aa04-1ffd-44b9-9e7a-31f72c53e490
-    tls: true
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: false
     network: ws
     ws-opts:
-      path: /vless
-  - name: Node_97_47.251_443
-    server: 47.251.95.178
-    port: 443
-    type: vless
-    uuid: ea286109-d20f-415e-849e-4af20ab04b65
-    tls: true
-    network: tcp
-  - name: Node_98_147135_443
-    server: 147135001178.sec22org.com
-    port: 443
-    type: vless
-    uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-    tls: true
-    network: tcp
-  - name: Node_99_147135_443
-    server: 147135001178.sec22org.com
-    port: 443
-    type: vless
-    uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-    tls: true
-    network: tcp
-  - name: Node_100_51.158_23576
-    server: 51.158.206.86
-    port: 23576
-    type: vless
-    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-    tls: false
-    network: tcp
+      path: /fp
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Node_1_104.18_80
-      - Node_2_104.17_443
-      - Node_3_104.17_443
+      - Node_1_89.116_443
+      - Node_2_45.131_443
+      - Node_3_104.18_80
       - Node_4_104.17_443
-      - Node_5_104.17_443
-      - Node_6_104.17_443
-      - Node_7_45.85._2083
-      - Node_8_104.17_443
-      - Node_9_45.130_443
-      - Node_10_45.130_443
-      - Node_11_104.23_443
-      - Node_12_104.16_8443
-      - Node_13_172.66_8880
-      - Node_14_104.21_443
-      - Node_15_151.10_80
-      - Node_16_151.10_80
-      - Node_17_45.131_443
-      - Node_18_104.16_443
-      - Node_19_104.17_443
-      - Node_20_104.17_443
-      - Node_21_104.17_443
-      - Node_22_104.17_443
-      - Node_23_104.17_443
+      - Node_5_104.16_443
+      - Node_6_45.130_2053
+      - Node_7_45.130_443
+      - Node_8_104.16_8443
+      - Node_9_23.150_8388
+      - Node_10_104.26_2083
+      - Node_11_199.23_443
+      - Node_12_104.26_443
+      - Node_13_172.67_443
+      - Node_14_104.18_443
+      - Node_15_104.21_443
+      - Node_16_104.21_443
+      - Node_17_188.11_443
+      - Node_18_188.11_8080
+      - Node_19_108.16_8443
+      - Node_20_104.18_443
+      - Node_21_188.11_443
+      - Node_22_172.64_2053
+      - Node_23_104.16_443
       - Node_24_104.17_443
       - Node_25_104.17_443
       - Node_26_104.17_443
-      - Node_27_104.21_8080
-      - Node_28_45.130_443
-      - Node_29_104.16_443
-      - Node_30_45.130_443
-      - Node_31_104.16_443
-      - Node_32_104.16_80
-      - Node_33_104.16_443
+      - Node_27_104.17_443
+      - Node_28_45.85._2083
+      - Node_29_104.17_443
+      - Node_30_104.17_443
+      - Node_31_104.17_443
+      - Node_32_104.17_443
+      - Node_33_45.130_443
       - Node_34_45.130_443
-      - Node_35_45.130_443
-      - Node_36_104.17_443
-      - Node_37_151.10_443
-      - Node_38_104.26_443
-      - Node_39_104.16_443
-      - Node_40_104.16_443
-      - Node_41_159.11_443
-      - Node_42_45.130_2053
-      - Node_43_45.130_443
-      - Node_44_172.64_443
-      - Node_45_173.24_443
-      - Node_46_45.130_2053
-      - Node_47_45.130_443
-      - Node_48_172.67_443
-      - Node_49_172.66_2096
-      - Node_50_172.67_2087
-      - Node_51_104.21_443
-      - Node_52_172.67_443
-      - Node_53_172.67_2096
-      - Node_54_23.227_2053
-      - Node_55_188.11_443
-      - Node_56_104.21_2053
-      - Node_57_172.66_443
+      - Node_35_104.26_443
+      - Node_36_104.16_443
+      - Node_37_159.11_443
+      - Node_38_45.130_443
+      - Node_39_173.24_443
+      - Node_40_45.130_2053
+      - Node_41_172.67_443
+      - Node_42_172.66_2096
+      - Node_43_172.67_2087
+      - Node_44_172.67_2096
+      - Node_45_172.67_2087
+      - Node_46_188.11_8080
+      - Node_47_104.19_443
+      - Node_48_104.18_443
+      - Node_49_104.17_443
+      - Node_50_104.17_443
+      - Node_51_104.17_443
+      - Node_52_104.17_443
+      - Node_53_45.130_443
+      - Node_54_45.130_443
+      - Node_55_104.21_443
+      - Node_56_104.21_443
+      - Node_57_23.227_2053
       - Node_58_188.11_443
       - Node_59_188.11_443
       - Node_60_172.66_443
-      - Node_61_104.21_8443
-      - Node_62_151.10_80
-      - Node_63_151.10_80
-      - Node_64_151.10_80
-      - Node_65_45.130_443
-      - Node_66_104.16_8443
-      - Node_67_104.21_443
-      - Node_68_104.21_443
-      - Node_69_172.67_2087
-      - Node_70_185.14_443
-      - Node_71_104.17_443
-      - Node_72_104.18_443
-      - Node_73_15.204_443
-      - Node_74_15.204_443
-      - Node_75_15.204_443
-      - Node_76_15.204_443
-      - Node_77_15.204_443
-      - Node_78_15.204_443
-      - Node_79_15.204_443
-      - Node_80_15.204_443
-      - Node_81_15.204_443
-      - Node_82_51.81._443
-      - Node_83_51.81._443
-      - Node_84_15.204_443
-      - Node_85_15.204_443
-      - Node_86_51.81._443
-      - Node_87_147.13_443
-      - Node_88_69.164_10878
-      - Node_89_15.204_443
-      - Node_90_15.204_443
-      - Node_91_15.204_443
-      - Node_92_51.81._443
-      - Node_93_15.204_443
-      - Node_94_15.204_443
-      - Node_95_147.13_443
-      - Node_96_191.10_443
-      - Node_97_47.251_443
-      - Node_98_147135_443
-      - Node_99_147135_443
-      - Node_100_51.158_23576
+      - Node_61_162.15_8880
+      - Node_62_188.11_2095
+      - Node_63_199.23_443
+      - Node_64_151.10_443
+      - Node_65_130.25_443
+      - Node_66_172.66_8443
+      - Node_67_188.11_8080
+      - Node_68_188.11_443
+      - Node_69_45.130_443
+      - Node_70_104.16_443
+      - Node_71_104.23_443
+      - Node_72_172.66_8880
+      - Node_73_172.67_443
+      - Node_74_104.21_443
+      - Node_75_104.21_2053
+      - Node_76_172.66_443
+      - Node_77_188.11_443
+      - Node_78_185.14_443
+      - Node_79_104.21_8443
+      - Node_80_104.16_2083
+      - Node_81_104.16_443
+      - Node_82_104.17_443
+      - Node_83_104.16_443
+      - Node_84_104.16_80
+      - Node_85_172.64_443
+      - Node_86_104.17_443
+      - Node_87_45.130_443
+      - Node_88_104.19_443
+      - Node_89_188.42_2087
+      - Node_90_172.67_443
+      - Node_91_172.64_2082
+      - Node_92_172.67_443
+      - Node_93_104.16_443
+      - Node_94_104.17_443
+      - Node_95_172.67_2087
+      - Node_96_45.85._443
+      - Node_97_104.16_2096
+      - Node_98_104.21_443
+      - Node_99_104.18_443
+      - Node_100_172.64_2082
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Node_1_104.18_80
-      - Node_2_104.17_443
-      - Node_3_104.17_443
+      - Node_1_89.116_443
+      - Node_2_45.131_443
+      - Node_3_104.18_80
       - Node_4_104.17_443
-      - Node_5_104.17_443
-      - Node_6_104.17_443
-      - Node_7_45.85._2083
-      - Node_8_104.17_443
-      - Node_9_45.130_443
-      - Node_10_45.130_443
-      - Node_11_104.23_443
-      - Node_12_104.16_8443
-      - Node_13_172.66_8880
-      - Node_14_104.21_443
-      - Node_15_151.10_80
-      - Node_16_151.10_80
-      - Node_17_45.131_443
-      - Node_18_104.16_443
-      - Node_19_104.17_443
-      - Node_20_104.17_443
-      - Node_21_104.17_443
-      - Node_22_104.17_443
-      - Node_23_104.17_443
+      - Node_5_104.16_443
+      - Node_6_45.130_2053
+      - Node_7_45.130_443
+      - Node_8_104.16_8443
+      - Node_9_23.150_8388
+      - Node_10_104.26_2083
+      - Node_11_199.23_443
+      - Node_12_104.26_443
+      - Node_13_172.67_443
+      - Node_14_104.18_443
+      - Node_15_104.21_443
+      - Node_16_104.21_443
+      - Node_17_188.11_443
+      - Node_18_188.11_8080
+      - Node_19_108.16_8443
+      - Node_20_104.18_443
+      - Node_21_188.11_443
+      - Node_22_172.64_2053
+      - Node_23_104.16_443
       - Node_24_104.17_443
       - Node_25_104.17_443
       - Node_26_104.17_443
-      - Node_27_104.21_8080
-      - Node_28_45.130_443
-      - Node_29_104.16_443
-      - Node_30_45.130_443
-      - Node_31_104.16_443
-      - Node_32_104.16_80
-      - Node_33_104.16_443
+      - Node_27_104.17_443
+      - Node_28_45.85._2083
+      - Node_29_104.17_443
+      - Node_30_104.17_443
+      - Node_31_104.17_443
+      - Node_32_104.17_443
+      - Node_33_45.130_443
       - Node_34_45.130_443
-      - Node_35_45.130_443
-      - Node_36_104.17_443
-      - Node_37_151.10_443
-      - Node_38_104.26_443
-      - Node_39_104.16_443
-      - Node_40_104.16_443
-      - Node_41_159.11_443
-      - Node_42_45.130_2053
-      - Node_43_45.130_443
-      - Node_44_172.64_443
-      - Node_45_173.24_443
-      - Node_46_45.130_2053
-      - Node_47_45.130_443
-      - Node_48_172.67_443
-      - Node_49_172.66_2096
-      - Node_50_172.67_2087
-      - Node_51_104.21_443
-      - Node_52_172.67_443
-      - Node_53_172.67_2096
-      - Node_54_23.227_2053
-      - Node_55_188.11_443
-      - Node_56_104.21_2053
-      - Node_57_172.66_443
+      - Node_35_104.26_443
+      - Node_36_104.16_443
+      - Node_37_159.11_443
+      - Node_38_45.130_443
+      - Node_39_173.24_443
+      - Node_40_45.130_2053
+      - Node_41_172.67_443
+      - Node_42_172.66_2096
+      - Node_43_172.67_2087
+      - Node_44_172.67_2096
+      - Node_45_172.67_2087
+      - Node_46_188.11_8080
+      - Node_47_104.19_443
+      - Node_48_104.18_443
+      - Node_49_104.17_443
+      - Node_50_104.17_443
+      - Node_51_104.17_443
+      - Node_52_104.17_443
+      - Node_53_45.130_443
+      - Node_54_45.130_443
+      - Node_55_104.21_443
+      - Node_56_104.21_443
+      - Node_57_23.227_2053
       - Node_58_188.11_443
       - Node_59_188.11_443
       - Node_60_172.66_443
-      - Node_61_104.21_8443
-      - Node_62_151.10_80
-      - Node_63_151.10_80
-      - Node_64_151.10_80
-      - Node_65_45.130_443
-      - Node_66_104.16_8443
-      - Node_67_104.21_443
-      - Node_68_104.21_443
-      - Node_69_172.67_2087
-      - Node_70_185.14_443
-      - Node_71_104.17_443
-      - Node_72_104.18_443
-      - Node_73_15.204_443
-      - Node_74_15.204_443
-      - Node_75_15.204_443
-      - Node_76_15.204_443
-      - Node_77_15.204_443
-      - Node_78_15.204_443
-      - Node_79_15.204_443
-      - Node_80_15.204_443
-      - Node_81_15.204_443
-      - Node_82_51.81._443
-      - Node_83_51.81._443
-      - Node_84_15.204_443
-      - Node_85_15.204_443
-      - Node_86_51.81._443
-      - Node_87_147.13_443
-      - Node_88_69.164_10878
-      - Node_89_15.204_443
-      - Node_90_15.204_443
-      - Node_91_15.204_443
-      - Node_92_51.81._443
-      - Node_93_15.204_443
-      - Node_94_15.204_443
-      - Node_95_147.13_443
-      - Node_96_191.10_443
-      - Node_97_47.251_443
-      - Node_98_147135_443
-      - Node_99_147135_443
-      - Node_100_51.158_23576
+      - Node_61_162.15_8880
+      - Node_62_188.11_2095
+      - Node_63_199.23_443
+      - Node_64_151.10_443
+      - Node_65_130.25_443
+      - Node_66_172.66_8443
+      - Node_67_188.11_8080
+      - Node_68_188.11_443
+      - Node_69_45.130_443
+      - Node_70_104.16_443
+      - Node_71_104.23_443
+      - Node_72_172.66_8880
+      - Node_73_172.67_443
+      - Node_74_104.21_443
+      - Node_75_104.21_2053
+      - Node_76_172.66_443
+      - Node_77_188.11_443
+      - Node_78_185.14_443
+      - Node_79_104.21_8443
+      - Node_80_104.16_2083
+      - Node_81_104.16_443
+      - Node_82_104.17_443
+      - Node_83_104.16_443
+      - Node_84_104.16_80
+      - Node_85_172.64_443
+      - Node_86_104.17_443
+      - Node_87_45.130_443
+      - Node_88_104.19_443
+      - Node_89_188.42_2087
+      - Node_90_172.67_443
+      - Node_91_172.64_2082
+      - Node_92_172.67_443
+      - Node_93_104.16_443
+      - Node_94_104.17_443
+      - Node_95_172.67_2087
+      - Node_96_45.85._443
+      - Node_97_104.16_2096
+      - Node_98_104.21_443
+      - Node_99_104.18_443
+      - Node_100_172.64_2082
   - name: 🎯 全球直连
     type: select
     proxies:
