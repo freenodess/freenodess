@@ -4,7 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-  - name: Node_1_lizca2_443
+  - name: Node_1_185.11_8443
+    server: 185.113.223.183
+    port: 8443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    network: tcp
+  - name: Node_2_lizca2_443
     server: lizca2.footballfantasyforum.com
     port: 443
     type: vless
@@ -17,14 +24,16 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Node_1_lizca2_443
+      - Node_1_185.11_8443
+      - Node_2_lizca2_443
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Node_1_lizca2_443
+      - Node_1_185.11_8443
+      - Node_2_lizca2_443
   - name: 🎯 全球直连
     type: select
     proxies:
