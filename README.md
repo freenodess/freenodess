@@ -1,5 +1,5 @@
 # 公益免费节点每天更新最新订阅地址
-### 更新时间: 2026-9-27
+### 更新时间: 2026-9-28
 
 
 ## [海外社交账号商店](http://shop.tgaaaa.co)  
@@ -12,7 +12,7 @@
 
 ## 高速翻墙VPN机场推荐
 
-### 🐮88云加速机场 10元/月 每月200g [点击注册](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
+### 🐮88云加速机场 10元/月 每月200g [点击注册](https://www.8891888.xyz/#/register?code=n4KLfZJb)
 
 ### ➡️不跑路 ➡️快 ➡️稳 ➡️服务好
 
@@ -26,9 +26,9 @@
 
 ### 🤝AFF推广佣金40%
 
-### ✈️ [TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          🔗[ 官方网站 ](https://88cloud.pages.dev/)
+### ✈️ [TG群组 ](https://t.me/+gfS8zRPNWMdmMjg1)          🔗[ 官方网站 ](https://www.8891888.xyz)
 
-### 注册地址：[【88云加速官网（点击注册）】](https://qq.88cloud.dpdns.org/#/register?code=n4KLfZJb)
+### 注册地址：[【88云加速官网（点击注册）】](https://www.8891888.xyz/#/register?code=n4KLfZJb)
 
 
 ### [星辰VPN](http://xc.luniu8.com/?code=tLBWwhPs)
