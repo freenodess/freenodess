@@ -1,5 +1,5 @@
 # 公益免费节点每天更新最新订阅地址
-### 更新时间: 2026-9-29
+### 更新时间: 2026-9-30
 
 
 ## [海外社交账号商店](http://shop.tgaaaa.co)  
@@ -86,9 +86,9 @@
 
 
 
-### [西游云](https://d.xiyou666.xyz/?code=LQzUg4EU)
+### [西游云](https://e.xiyou666.xyz/?code=LQzUg4EU)
 
-### 注册链接：[点击进入](https://d.xiyou666.xyz/?code=LQzUg4EU)
+### 注册链接：[点击进入](https://e.xiyou666.xyz/?code=LQzUg4EU)
 
 
 
