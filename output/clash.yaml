@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-  - name: Node_1_185.17_443
-    server: 185.171.202.106
-    port: 443
+  - name: Node_1_185.11_8443
+    server: 185.113.223.183
+    port: 8443
     type: vless
-    uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: false
     network: tcp
 proxy-groups:
@@ -17,14 +17,14 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - Node_1_185.17_443
+      - Node_1_185.11_8443
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Node_1_185.17_443
+      - Node_1_185.11_8443
   - name: 🎯 全球直连
     type: select
     proxies:

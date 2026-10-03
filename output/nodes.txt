@@ -1,1 +1,1 @@
-vless://f495298f-2bdb-4fd8-9ac9-5dd33d1b482a@185.171.202.106:443?encryption=none
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@185.113.223.183:8443?ed=2560
